@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgnjggkn5d81m"]
+
+[ext_resource type="Texture2D" uid="uid://b4ftc5385uof3" path="res://Main/Worlds/Prototype/Textures/Crumbling_Block.png" id="1_640f3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fw0df"]
+size = Vector2(16, 16)
+
+[node name="Breakable_Block" type="StaticBody2D"]
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fw0df")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 10
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_fw0df")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_640f3")

@@ -1,0 +1,64 @@
+
+Abiliys:
+	Spin act0.5; (allows the user to spin)
+	Spin act1; (passive) (obtained by ) (increases bullet damage) (significantly increases the steelballs damage and range)
+	Spin act2; (passive) (obtained by learning the golden rectangle somewhere) (increases damage) (slight homing affect: upgradable with spin art)
+	Spin act2.5; (allows user to use a super jump with spin) (allows the user to learn more self spin techniques: spin art)
+	Spin act3;  (allows the user to pass through walls if used on a wall in a spesific range) (gives a 5 second frame of invincibility allowing the user to go underground and move)
+	
+	Spin art (spin art is a way to upgrade the spin techniques and allowing more abilitys); 
+		art 1; control the ball with camera locked on with very far range (use for puzzles??)
+	
+	Add a spin technique that spins a ball and creates fire with friction.
+	
+	Calculate RPM of the spin with the weight of the steel ball and the amount of life energy
+	
+	create frictional energy through the steel balls
+	
+	control electricity. I wanna add some sort of electrical engenieering stuffs sim
+	
+	Zombie Horse; (self healing and heals others) (found on the side of a mountain near the beginning)
+etc:
+	lifenergy (exp)
+	natural healing (very slow can be upgraded through life energry)
+	spin balls (instant testicular torsion)
+map:
+	Start from tree called the life tree or sum and you grow drop down and your journey starts
+	door in the tree going to the roots a little underground area
+	inside the leaves a village
+	
+	make lake area maybe and a lil skypea like area
+	ant hill
+	
+	make savana or like dry flat desert
+	big desert add village and pyramids
+	pyramid dungeon w/ boss get key and ability
+	
+	golden city unlocked from the key in the pyramid golden key
+	
+	Make the rebellion, and secret base, punk rock.
+weapons:
+	Steel Balls (wrecking ball and the green steel ball) (up to 3)
+	Daedalus Ball (big ass ball and chain with axis point allowing it to spin infinitly)
+	guns
+accesorys:
+	
+	
+Story:
+	facist fruit regime under a dio like figure that can stop time and stuffs like that along side a someone like pucci
+	
+	Jesus's main goal is to end the lives of every living being on earth and to end suffering 
+Bosses:
+	MAIN BOSS "Doro?":
+		doro is like evil jesus and hes keeping you away from jesus body. jesus's body is needed to fight the final boss
+		doro is the "gift of god" 
+		you fight 3 weak clones of him before hand
+		
+		MAYBE INSTEAD JUST EVIL JESUS:
+			collect all the part of jesus and once 
+			hes collected you fight Jesus because hes secretly the anti christ and the 
+			bible was a fictional book written by jesus to shine 
+			great onto him but in reality the anti christ is himself
+			
+			ADD LIKE A BUNCH OF SATANIST SHIT
+	
