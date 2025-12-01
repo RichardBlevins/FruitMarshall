@@ -16,7 +16,7 @@ config/icon="res://Main/Worlds/Prototype/Textures/icon.svg"
 
 [autoload]
 
-Gamemanger="*res://Gamemanager/Gamemanger.gd"
+Gamemanger="*res://Main/Gamemanager/Gamemanger.gd"
 
 [display]
 
