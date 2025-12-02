@@ -101,8 +101,9 @@ func _destroy_blocks_with_effect(blocks: Array[Vector2i]) -> void:
 		
 		# Erase the tile
 		erase_cell(block_pos)
-
+# ====================================================
 # Optional: Spawn particle effects when block breaks
+# ==================================================== EDIT LATER!!
 func _spawn_break_particles(tile_pos: Vector2i) -> void:
 	# Get world position of tile
 	var world_pos = map_to_local(tile_pos)

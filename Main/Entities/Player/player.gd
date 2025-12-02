@@ -7,7 +7,6 @@ extends CharacterBody2D
 @export var knockback_force: float = 250.0
 
 # main player values
-
 @export var max_health: float = 20.0
 
 # Combat
@@ -27,9 +26,6 @@ var facing_direction: int = 1
 const RAYCAST_RANGE: float = 21.0
 const PUNCH_OFFSET: float = 13.0
 
-func _ready() -> void:
-	punch_area.area_entered.connect(_on_punch_hit)
-	#connects the signal to punch
 
 # =============================================
 # SAVE HANDLE
@@ -50,6 +46,10 @@ func load_player_data():
 	global_position = data.get("player_position", Vector2.ZERO)
 	max_health = data.get("max_health", 20.0)
 
+func _ready() -> void:
+	punch_area.area_entered.connect(_on_punch_hit)
+	load_player_data()
+
 func _physics_process(delta: float) -> void:
 	_apply_gravity(delta)
 	_handle_jump()
@@ -57,6 +57,7 @@ func _physics_process(delta: float) -> void:
 	_handle_gui()
 	_handle_attack()
 	move_and_slide()
+	
 
 # ============================================
 # MOVEMENT
