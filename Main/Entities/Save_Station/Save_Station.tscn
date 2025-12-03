@@ -7,6 +7,8 @@
 size = Vector2(16, 16)
 
 [node name="SaveStation" type="Area2D"]
+collision_layer = 16
+collision_mask = 0
 script = ExtResource("1_nw5bl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -17,4 +19,4 @@ position = Vector2(4.7683716e-07, 4.7683716e-07)
 scale = Vector2(0.12499999, 0.12499999)
 texture = ExtResource("2_nk0ks")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

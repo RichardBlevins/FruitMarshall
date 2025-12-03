@@ -26,14 +26,12 @@ var facing_direction: int = 1
 const RAYCAST_RANGE: float = 21.0
 const PUNCH_OFFSET: float = 13.0
 
-
 # =============================================
 # SAVE HANDLE
 # =============================================
 
 func save_player_data():
 	var player_data = {
-		"player_position": global_position,
 		"max_health": max_health
 	}
 	SaveManager.save_game(player_data)
@@ -42,8 +40,7 @@ func load_player_data():
 	var data = SaveManager.load_game()
 	if data.is_empty():
 		return  # No save file, start new game
-	
-	global_position = data.get("player_position", Vector2.ZERO)
+
 	max_health = data.get("max_health", 20.0)
 
 func _ready() -> void:
@@ -57,6 +54,7 @@ func _physics_process(delta: float) -> void:
 	_handle_gui()
 	_handle_attack()
 	move_and_slide()
+	
 	
 
 # ============================================
@@ -202,4 +200,4 @@ func _handle_gui() -> void:
 			true:
 				menu.visible = true
 				
-		
+	

@@ -52,6 +52,7 @@ menu={
 2d_physics/layer_2="Ground"
 2d_physics/layer_3="Enemies"
 2d_physics/layer_4="Breakable Wall"
+2d_physics/layer_5="Save_Station"
 
 [physics]
 
