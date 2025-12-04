@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvdvq6qfbcx17"]
+
+[ext_resource type="Script" uid="uid://fmg5nb7vmgyp" path="res://Main/Entities/Save_Station/save_station.gd" id="1_nw5bl"]
+[ext_resource type="Texture2D" uid="uid://cfkfottocq5v8" path="res://Main/Worlds/Prototype/Textures/icon.svg" id="2_nk0ks"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lw86"]
+size = Vector2(16, 16)
+
+[node name="SaveStation" type="Area2D"]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("1_nw5bl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7lw86")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.7683716e-07, 4.7683716e-07)
+scale = Vector2(0.12499999, 0.12499999)
+texture = ExtResource("2_nk0ks")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

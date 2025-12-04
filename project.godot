@@ -16,7 +16,8 @@ config/icon="res://Main/Worlds/Prototype/Textures/icon.svg"
 
 [autoload]
 
-Gamemanger="*res://Main/Gamemanager/Gamemanger.gd"
+Gamemanger="*res://Main/Managers/Gamemanger.gd"
+SaveManager="*res://Main/Managers/save_and_load/save_manager.tscn"
 
 [display]
 
@@ -25,6 +26,7 @@ window/stretch/mode="viewport"
 [global_group]
 
 menu=""
+player=""
 
 [input]
 
@@ -50,6 +52,7 @@ menu={
 2d_physics/layer_2="Ground"
 2d_physics/layer_3="Enemies"
 2d_physics/layer_4="Breakable Wall"
+2d_physics/layer_5="Save_Station"
 
 [physics]
 

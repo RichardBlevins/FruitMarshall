@@ -1,10 +1,13 @@
 extends CharacterBody2D
 
-# Movement constants
+# Movement and other player values
 @export var speed: float = 100.0
 @export var jump_velocity: float = -320.0
 @export var gravity: float = 1000.0
 @export var knockback_force: float = 250.0
+
+# main player values
+@export var max_health: float = 20.0
 
 # Combat
 @export var held_item = null
@@ -23,9 +26,17 @@ var facing_direction: int = 1
 const RAYCAST_RANGE: float = 21.0
 const PUNCH_OFFSET: float = 13.0
 
+# =============================================
+# SAVE HANDLE
+# =============================================
+
+
+
 func _ready() -> void:
 	punch_area.area_entered.connect(_on_punch_hit)
-	#connects the signal to punch
+	Gamemanger.set_player(self)
+	SaveManager.load_data()
+	global_position = SaveManager.data.Player_Position
 
 func _physics_process(delta: float) -> void:
 	_apply_gravity(delta)
@@ -34,6 +45,8 @@ func _physics_process(delta: float) -> void:
 	_handle_gui()
 	_handle_attack()
 	move_and_slide()
+	
+	
 
 # ============================================
 # MOVEMENT
@@ -90,6 +103,10 @@ func _execute_punch() -> void:
 	punch_area.monitoring = false
 	is_attack_ready = true
 
+# ============================================
+# BLOCK TYPE HANDLER
+# ============================================
+
 func _check_tile_collision() -> void:
 	if not interaction_raycast.is_colliding():
 		return
@@ -129,6 +146,9 @@ func _handle_breakable_block(tilemap: TileMapLayer) -> void:
 		# Optional: Add screen shake, sound effect, etc.
 		_play_block_break_effect()
 
+# ============================================
+# MOVEMENT / COMBAT (DETECT USING RAYCAST)
+# ============================================
 
 func _get_tile_data_at_raycast(tilemap: TileMapLayer) -> TileData:
 	var collision_point = interaction_raycast.get_collision_point()
@@ -171,4 +191,4 @@ func _handle_gui() -> void:
 			true:
 				menu.visible = true
 				
-		
+	
