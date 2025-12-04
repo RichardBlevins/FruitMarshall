@@ -30,22 +30,13 @@ const PUNCH_OFFSET: float = 13.0
 # SAVE HANDLE
 # =============================================
 
-func save_player_data():
-	var player_data = {
-		"max_health": max_health
-	}
-	SaveManager.save_game(player_data)
 
-func load_player_data():
-	var data = SaveManager.load_game()
-	if data.is_empty():
-		return  # No save file, start new game
-
-	max_health = data.get("max_health", 20.0)
 
 func _ready() -> void:
 	punch_area.area_entered.connect(_on_punch_hit)
-	load_player_data()
+	Gamemanger.set_player(self)
+	SaveManager.load_data()
+	global_position = SaveManager.data.Player_Position
 
 func _physics_process(delta: float) -> void:
 	_apply_gravity(delta)

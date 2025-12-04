@@ -32,6 +32,9 @@ sources/1 = SubResource("TileSetAtlasSource_lflh4")
 
 [node name="PrototypeWrld" type="Node2D"]
 
+[node name="Player" parent="." instance=ExtResource("1_im01y")]
+position = Vector2(-32, -24)
+
 [node name="TileMap" type="Node" parent="."]
 
 [node name="CollisionLayer" type="TileMapLayer" parent="TileMap"]
@@ -42,6 +45,3 @@ script = ExtResource("4_lflh4")
 
 [node name="SaveStation" parent="." instance=ExtResource("5_cpvri")]
 position = Vector2(-72, -56)
-
-[node name="Player" parent="." instance=ExtResource("1_im01y")]
-position = Vector2(-32, -24)
