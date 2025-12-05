@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4ftc5385uof3"
-path="res://.godot/imported/Crumbling_Block.png-136f180595dda26b44ec44b003aa8d7b.ctex"
+uid="uid://cfkfottocq5v8"
+path="res://.godot/imported/icon.svg-d3ce6d34ded6119c5ac3df925054df49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/Worlds/Prototype/Textures/Crumbling_Block.png"
-dest_files=["res://.godot/imported/Crumbling_Block.png-136f180595dda26b44ec44b003aa8d7b.ctex"]
+source_file="res://Main/Worlds/Main_World/Textures/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-d3ce6d34ded6119c5ac3df925054df49.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

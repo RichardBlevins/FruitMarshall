@@ -1,3 +1,2 @@
 
-Get the players global location to save or load at a save point.
 Get debug player detection

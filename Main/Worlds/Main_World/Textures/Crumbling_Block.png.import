@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q4l618hdcyb6"
-path="res://.godot/imported/Block.png-9a306445d9650bb08b3e69a6640b5fac.ctex"
+uid="uid://b4ftc5385uof3"
+path="res://.godot/imported/Crumbling_Block.png-649287f7149a8cd55fd6276b238282d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/Worlds/Prototype/Textures/Block.png"
-dest_files=["res://.godot/imported/Block.png-9a306445d9650bb08b3e69a6640b5fac.ctex"]
+source_file="res://Main/Worlds/Main_World/Textures/Crumbling_Block.png"
+dest_files=["res://.godot/imported/Crumbling_Block.png-649287f7149a8cd55fd6276b238282d5.ctex"]
 
 [params]
 

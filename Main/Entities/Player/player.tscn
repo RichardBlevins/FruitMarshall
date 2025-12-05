@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://rw2x5xc2rw6j"]
+[gd_scene load_steps=8 format=3 uid="uid://rw2x5xc2rw6j"]
 
 [ext_resource type="Script" uid="uid://ca27jikc2dsj6" path="res://Main/Entities/Player/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://5jo1lbs12ynh" path="res://Main/Entities/Player/Pear.png" id="2_lu8i8"]
 [ext_resource type="PackedScene" uid="uid://d2pr0f34r60ww" path="res://Main/Entities/Player/Attacks/Punch.tscn" id="3_lu8i8"]
+[ext_resource type="Script" uid="uid://c1oelm73utwdw" path="res://Main/Entities/Player/interaction_zone.gd" id="4_r86g3"]
 [ext_resource type="PackedScene" uid="uid://cum08nbfkucf5" path="res://Main/Gui/Menu/Menu.tscn" id="4_wau81"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sh265"]
@@ -10,7 +11,7 @@ radius = 4.0
 height = 18.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wau81"]
-radius = 4.0
+radius = 5.0
 height = 16.0
 
 [node name="Player" type="CharacterBody2D"]
@@ -40,9 +41,12 @@ position = Vector2(13, 0)
 [node name="InteractionZone" type="Area2D" parent="." groups=["player"]]
 collision_layer = 0
 collision_mask = 20
+script = ExtResource("4_r86g3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone"]
 shape = SubResource("CapsuleShape2D_wau81")
 
 [node name="Menu" parent="." instance=ExtResource("4_wau81")]
 visible = false
+
+[connection signal="area_entered" from="InteractionZone" to="InteractionZone" method="_on_area_entered"]

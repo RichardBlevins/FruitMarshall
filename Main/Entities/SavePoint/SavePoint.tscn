@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvdvq6qfbcx17"]
+
+[ext_resource type="Texture2D" uid="uid://cfkfottocq5v8" path="res://Main/Worlds/Main_World/Textures/icon.svg" id="2_nk0ks"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lw86"]
+size = Vector2(16, 16)
+
+[node name="SaveStation" type="Area2D" groups=["savepoint"]]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7lw86")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.7683716e-07, 4.7683716e-07)
+scale = Vector2(0.12499999, 0.12499999)
+texture = ExtResource("2_nk0ks")

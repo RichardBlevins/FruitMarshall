@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Steel"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://Main/Worlds/Prototype/Textures/icon.svg"
+config/icon="res://Main/Worlds/Main_World/Textures/icon.svg"
 
 [autoload]
 
@@ -57,7 +57,3 @@ menu={
 [physics]
 
 3d/physics_engine="Jolt Physics"
-
-[rendering]
-
-textures/canvas_textures/default_texture_filter=0
