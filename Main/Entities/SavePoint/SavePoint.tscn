@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7lw86"]
 size = Vector2(16, 16)
 
-[node name="SaveStation" type="Area2D" groups=["savepoint"]]
+[node name="SavePoint" type="Area2D" groups=["savepoint"]]
 collision_layer = 16
 collision_mask = 0
 

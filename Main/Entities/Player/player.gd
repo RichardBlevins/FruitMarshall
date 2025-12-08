@@ -81,7 +81,7 @@ func _update_facing_direction(direction: float) -> void:
 	punch_area.position = Vector2(PUNCH_OFFSET * facing_direction, 0)
 
 # ============================================
-# COMBAT
+# COMBAT / INTERACTION
 # ============================================
 
 func _handle_attack() -> void:

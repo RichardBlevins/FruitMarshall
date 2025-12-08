@@ -44,5 +44,11 @@ tile_map_data = PackedByteArray("AAAGAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAEAAAAAAAAAAA
 tile_set = SubResource("TileSet_h8u87")
 script = ExtResource("4_njm55")
 
-[node name="SaveStation" parent="." instance=ExtResource("5_7361k")]
+[node name="SavePoint" parent="." instance=ExtResource("5_7361k")]
 position = Vector2(-72, -40)
+
+[node name="SavePoint2" parent="." instance=ExtResource("5_7361k")]
+position = Vector2(232, -8)
+
+[node name="SavePoint3" parent="." instance=ExtResource("5_7361k")]
+position = Vector2(136, 8)
